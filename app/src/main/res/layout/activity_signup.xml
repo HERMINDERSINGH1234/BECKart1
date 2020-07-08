@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".view.SignUpActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/app_name"
+                android:textStyle="bold|italic"
+                android:background="@color/lightGray"
+                android:textSize="@dimen/dimen35sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen24dp"
+                android:paddingBottom="@dimen/dimen10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/shop_online"
+                android:textStyle="bold"
+                android:background="@color/lightGray"
+                android:textSize="@dimen/dimen18sp" />
+
+            <!-- Name Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen8dp"
+                android:layout_marginBottom="@dimen/dimen8dp"
+                android:hint="@string/name"
+                android:paddingLeft="@dimen/dimen24dp"
+                android:paddingRight="@dimen/dimen24dp">
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_border"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/dimen5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  Email Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen8dp"
+                android:layout_marginBottom="@dimen/dimen8dp"
+                android:hint="@string/email"
+                android:paddingLeft="@dimen/dimen24dp"
+                android:paddingRight="@dimen/dimen24dp">
+
+                <EditText
+                    android:id="@+id/userEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_border"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/dimen5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Password Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen8dp"
+                android:layout_marginBottom="@dimen/dimen8dp"
+                android:hint="@string/password"
+                android:paddingLeft="@dimen/dimen24dp"
+                android:paddingRight="@dimen/dimen24dp"
+                app:passwordToggleContentDescription="Enter Your Password"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/userPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_border"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen5dp"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen24dp"
+                android:drawableStart="@drawable/ic_info"
+                android:drawablePadding="@dimen/dimen10dp"
+                android:paddingLeft="@dimen/dimen24dp"
+                android:paddingRight="@dimen/dimen24dp"
+                android:text="@string/eight_characters"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen18sp" />
+
+            <!-- Signup Button -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/buttonSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen24dp"
+                android:layout_marginRight="@dimen/dimen24dp"
+                android:layout_marginBottom="@dimen/dimen24dp"
+                android:background="@color/yellow"
+                android:padding="@dimen/dimen12dp"
+                android:text="@string/create_your_account"
+                android:textAllCaps="false"
+                android:textSize="@dimen/dimen18sp" />
+
+            <TextView
+                android:id="@+id/textViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen24dp"
+                android:gravity="center"
+                android:textSize="@dimen/dimen16sp"
+                tools:text="@string/sign_in_already_a_customer" />
+        </LinearLayout>
+    </ScrollView>
+</layout>
