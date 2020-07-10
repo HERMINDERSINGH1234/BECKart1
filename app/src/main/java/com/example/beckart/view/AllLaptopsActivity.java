@@ -1,5 +1,7 @@
 package com.example.beckart.view;
 
+import android.arch.lifecycle.Lifecycle;
+import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProvider;
 //import androidx.paging.PagedList;
@@ -12,6 +14,7 @@ import android.content.res.Configuration;
 //import androidx.databinding.DataBindingUtil;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -30,7 +33,7 @@ import com.example.beckart.storage.LoginUtils;
 import static com.example.beckart.storage.LanguageUtils.loadLocale;
 import static com.example.beckart.utils.Constant.PRODUCT;
 
-public class AllLaptopsActivity extends AppCompatActivity implements ProductAdapter.ProductAdapterOnClickHandler {
+public class AllLaptopsActivity extends AppCompatActivity implements ProductAdapter.ProductAdapterOnClickHandler, LifecycleOwner {
 
     private ActivityAllLaptopsBinding binding;
     private ProductAdapter laptopAdapter;
@@ -83,5 +86,11 @@ public class AllLaptopsActivity extends AppCompatActivity implements ProductAdap
         // Pass an object of product class
         intent.putExtra(PRODUCT, (product));
         startActivity(intent);
+    }
+
+    @NonNull
+    @Override
+    public Lifecycle getLifecycle() {
+        return null;
     }
 }

@@ -22,7 +22,7 @@ public class HistoryViewModel extends ViewModel {
         liveDataSource=historyDataSourceFactory.getProductsInHistory();
 
         // Get PagedList configuration
-        PagedList.Config pagedListConfig = (new PagedList.Config.Builder().setEnablePlaceholders(false).setPageSize(HistoryDataSource.PAGE_SIZE).build();
+        PagedList.Config pagedListConfig = (new PagedList.Config.Builder().setEnablePlaceholders(false).setPageSize(HistoryDataSource.PAGE_SIZE).build());
 
         // Build the paged list
         historyPagedList = (new LivePagedListBuilder(historyDataSourceFactory, pagedListConfig)).build();
