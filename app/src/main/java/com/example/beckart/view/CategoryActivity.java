@@ -115,7 +115,7 @@ public class CategoryActivity extends AppCompatActivity implements ProductAdapte
     }
 
     public void showSnackBar() {
-        snack.getView().setBackgroundColor(ContextCompat.getColor(this, R.color.red));
+        snack.getView().setBackgroundColor(CategoryActivity.this.getColor(R.color.red));
         snack.show();
     }
 

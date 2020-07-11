@@ -5,10 +5,11 @@ package com.example.beckart.net;
 //import androidx.paging.PageKeyedDataSource;
 
 import android.arch.lifecycle.MutableLiveData;
+import android.arch.paging.DataSource;
+import android.arch.paging.PageKeyedDataSource;
 
 import com.example.beckart.model.Product;
 
-import javax.sql.DataSource;
 
 public class LaptopDataSourceFactory extends DataSource.Factory{
 

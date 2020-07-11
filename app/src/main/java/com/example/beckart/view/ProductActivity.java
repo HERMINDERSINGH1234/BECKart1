@@ -16,11 +16,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.Toolbar;
@@ -33,7 +36,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import de.hdodenhof.circleimageview.CircleImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.Priority;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.beckart.R;
 import com.example.beckart.ViewModel.HistoryViewModel;
 import com.example.beckart.ViewModel.ProductViewModel;
@@ -362,6 +370,7 @@ public class ProductActivity extends AppCompatActivity implements View.OnClickLi
             if (response != null) {
                 String imageUrl = LOCALHOST + response.getImage().replaceAll("\\\\", "/");
 
+
                 RequestOptions options = new RequestOptions()
                         .centerCrop()
                         .placeholder(R.drawable.profile_picture)
@@ -371,8 +380,8 @@ public class ProductActivity extends AppCompatActivity implements View.OnClickLi
                         .dontTransform();
 
                 Glide.with(getApplicationContext())
+                        .applyDefaultRequestOptions(options)
                         .load(imageUrl)
-                        .apply(options)
                         .into(circleImageView);
             }
         });

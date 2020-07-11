@@ -1,8 +1,11 @@
 package com.example.beckart.view;
+import android.arch.lifecycle.Lifecycle;
+import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -30,7 +33,7 @@ import static com.example.beckart.utils.Constant.PRODUCT;
 import static com.example.beckart.utils.Constant.PRODUCTID;
 import static com.example.beckart.utils.Constant.PRODUCT_ID;
 
-public class DetailsActivity extends AppCompatActivity implements View.OnClickListener {
+public class DetailsActivity extends AppCompatActivity implements View.OnClickListener, LifecycleOwner {
 
     private static final String TAG = "DetailsActivity";
 
@@ -145,4 +148,9 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
     }
 
 
+    @NonNull
+    @Override
+    public Lifecycle getLifecycle() {
+        return null;
+    }
 }

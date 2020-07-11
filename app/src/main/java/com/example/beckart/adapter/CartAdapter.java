@@ -1,8 +1,8 @@
 package com.example.beckart.adapter;
-import android.arch.lifecycle.ViewModelProvider;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
-import android.databinding.*;
-
+import android.databinding.DataBindingUtil;
+import com.bumptech.glide.Glide;
 import com.example.beckart.R;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
@@ -52,9 +52,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         this.mContext = mContext;
         this.productsInCart = productInCart;
         this.clickHandler = clickHandler;
-        addFavoriteViewModel = ViewModelProvider.of(activity).get(AddFavoriteViewModel.class);
-        removeFavoriteViewModel = ViewModelProvider.of(activity).get(com.example.beckart.ViewModel.RemoveFavoriteViewModel.class);
-        fromCartViewModel = ViewModelProvider.of(activity).get(com.example.beckart.ViewModel.FromCartViewModel.class);
+        addFavoriteViewModel = ViewModelProviders.of(activity).get(AddFavoriteViewModel.class);
+        removeFavoriteViewModel = ViewModelProviders.of(activity).get(com.example.beckart.ViewModel.RemoveFavoriteViewModel.class);
+        fromCartViewModel = ViewModelProviders.of(activity).get(com.example.beckart.ViewModel.FromCartViewModel.class);
     }
 
     @NonNull
