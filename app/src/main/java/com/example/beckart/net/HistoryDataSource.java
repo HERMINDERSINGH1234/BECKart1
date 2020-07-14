@@ -26,7 +26,7 @@ public class HistoryDataSource extends PageKeyedDataSource<Integer, Product> {
     }
 
     @Override
-    public void loadInitial(@NonNull ItemKeyedDataSource.LoadInitialParams<Integer> params, @NonNull LoadInitialCallback<Integer, Product> callback) {
+    public void loadInitial(@NonNull LoadInitialParams<Integer> params, @NonNull LoadInitialCallback<Integer, Product> callback) {
         com.example.beckart.net.RetrofitClient.getInstance()
                 .getApi().getProductsInHistory(userId,FIRST_PAGE)
                 .enqueue(new Callback<HistoryApiResponse>() {
@@ -50,10 +50,6 @@ public class HistoryDataSource extends PageKeyedDataSource<Integer, Product> {
                 });
     }
 
-    @Override
-    public void loadInitial(@NonNull LoadInitialParams<Integer> params, @NonNull LoadInitialCallback<Integer, Product> callback) {
-
-    }
 
     @Override
     public void loadBefore(@NonNull LoadParams<Integer> params, @NonNull LoadCallback<Integer, Product> callback) {
