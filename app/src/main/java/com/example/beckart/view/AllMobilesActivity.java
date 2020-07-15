@@ -1,8 +1,6 @@
 package com.example.beckart.view;
 
-//import androidx.lifecycle.Observer;
-//import androidx.lifecycle.ViewModelProviders;
-//import androidx.paging.PagedList;
+
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.Observer;

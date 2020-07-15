@@ -2,24 +2,20 @@ package com.example.beckart.adapter;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.databinding.DataBindingUtil;
-import com.bumptech.glide.Glide;
-import com.example.beckart.R;
+import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
-import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.bumptech.glide.Glide;
 import com.example.beckart.R;
 import com.example.beckart.ViewModel.AddFavoriteViewModel;
 import com.example.beckart.ViewModel.FromCartViewModel;
-import com.example.beckart.ViewModel.RemoveFavoriteViewModel;
 import com.example.beckart.databinding.CartListItemBinding;
-import com.example.beckart.model.Favorite;
 import com.example.beckart.model.Product;
-import com.example.beckart.storage.LoginUtils;
 import com.example.beckart.utils.RequestCallback;
 
 import java.text.DecimalFormat;
