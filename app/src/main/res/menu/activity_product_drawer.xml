@@ -19,10 +19,7 @@
             android:icon="@drawable/ic_baby"
             android:title="@string/babies" />
 
-        <item
-            android:id="@+id/nav_toys"
-            android:icon="@drawable/ic_toy"
-            android:title="@string/toys" />
+
     </group>
 
     <group android:checkableBehavior="single"

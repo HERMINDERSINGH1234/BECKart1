@@ -36,7 +36,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import de.hdodenhof.circleimageview.CircleImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.Priority;
@@ -56,6 +55,8 @@ import com.example.beckart.utils.OnNetworkListener;
 import com.example.beckart.utils.Slide;
 
 import java.util.ArrayList;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 import static com.example.beckart.storage.LanguageUtils.loadLocale;
 import static com.example.beckart.utils.Constant.CAMERA_PERMISSION_CODE;
@@ -478,14 +479,13 @@ public class ProductActivity extends AppCompatActivity implements View.OnClickLi
         int id = menuItem.getItemId();
 
         if (id == R.id.nav_mobiles) {
-            goToCategoryActivity("Mobile");
+            goToCategoryActivity("Pressure Cookers");
         } else if (id == R.id.nav_laptops) {
-            goToCategoryActivity("Laptop");
+            goToCategoryActivity("Cookware");
         } else if (id == R.id.nav_babies) {
-            goToCategoryActivity("Baby");
-        } else if (id == R.id.nav_toys) {
-            goToCategoryActivity("Toy");
-        } else if (id == R.id.nav_trackOrder) {
+            goToCategoryActivity("Cutlery");
+        }
+        else if (id == R.id.nav_trackOrder) {
             Intent orderIntent = new Intent(this, OrdersActivity.class);
             startActivity(orderIntent);
         } else if (id == R.id.nav_myAccount) {
