@@ -1,7 +1,6 @@
 package com.example.beckart.net;
 
 import com.example.beckart.model.Cart;
-import com.example.beckart.model.Cart;
 import com.example.beckart.model.CartApiResponse;
 import com.example.beckart.model.Favorite;
 import com.example.beckart.model.FavoriteApiResponse;
@@ -19,9 +18,7 @@ import com.example.beckart.model.Review;
 import com.example.beckart.model.ReviewApiResponse;
 import com.example.beckart.model.Shipping;
 import com.example.beckart.model.User;
-
 import java.util.Map;
-
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
