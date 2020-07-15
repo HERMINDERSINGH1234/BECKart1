@@ -3,15 +3,15 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/red</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="AccountTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/red</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="textAllCaps">false</item>
     </style>
@@ -24,8 +24,8 @@
 
     <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/red</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -34,8 +34,8 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="AppTheme_Dialog" parent="Theme.AppCompat.Dialog">
-        <item name="colorAccent">@color/colorPrimary</item>
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorAccent">@color/gray</item>
+        <item name="android:textColor">@color/red</item>
         <item name="android:background">@color/white</item>
     </style>
 
@@ -43,8 +43,8 @@
     <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem"/>
 
     <style name="noAnimTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/red</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowAnimationStyle">@null</item>
     </style>

@@ -116,7 +116,7 @@
             android:layout_marginLeft="@dimen/dimen10dp"
             android:layout_marginRight="@dimen/dimen10dp"
             android:layout_marginBottom="@dimen/dimen10dp"
-            android:background="@drawable/custom_button_border2"
+            android:background="@color/orange"
             android:text="@string/proceed"
             android:textAllCaps="false"
             android:textSize="@dimen/dimen18sp" />

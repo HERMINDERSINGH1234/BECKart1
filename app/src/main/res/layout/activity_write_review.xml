@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|bottom"
                 android:textSize="25sp"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/red"
                 android:layout_margin="20dp"
                 android:text="@string/text_length" />
         </FrameLayout>

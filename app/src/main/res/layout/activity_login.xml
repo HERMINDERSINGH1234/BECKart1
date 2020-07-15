@@ -71,7 +71,7 @@
             android:layout_marginTop="@dimen/dimen24dp"
             android:layout_marginRight="@dimen/dimen24dp"
             android:layout_marginBottom="@dimen/dimen24dp"
-            android:background="@color/yellow"
+            android:background="@color/orange"
             android:text="@string/sign_in"
             android:textAllCaps="false"
             android:textSize="@dimen/dimen18sp" />

@@ -42,7 +42,7 @@
                     android:layout_weight="1"
                     android:gravity="end"
                     android:padding="@dimen/dimen10dp"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/gray"
                     android:textSize="@dimen/dimen16sp"
                     tools:text="@string/dateOfReview" />
             </LinearLayout>

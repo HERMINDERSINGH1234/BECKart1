@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:background="@color/colorPrimary"
+        android:background="@color/green"
         android:gravity="center"
         android:padding="@dimen/dimen5dp"
         android:text="@string/choose_profile_picture"
