@@ -10,7 +10,6 @@ import java.io.ByteArrayOutputStream;
 
 public class ImageUtils {
 
-    // And to convert the image URI to the direct file system path of the image file
     public static String getRealPathFromURI(Context context, Uri contentUri) {
 
         // can post image

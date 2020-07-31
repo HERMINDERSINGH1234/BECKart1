@@ -7,13 +7,11 @@ import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-
 import com.example.beckart.R;
 import com.example.beckart.databinding.ReviewListItemBinding;
 import com.example.beckart.model.Review;
 
 import java.util.List;
-
 public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewViewHolder> {
 
     private Context mContext;

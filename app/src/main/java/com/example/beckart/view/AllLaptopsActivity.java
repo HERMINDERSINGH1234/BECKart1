@@ -3,25 +3,17 @@ package com.example.beckart.view;
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
-//import androidx.paging.PagedList;
-
-import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.arch.paging.PagedList;
 import android.content.Intent;
 import android.content.res.Configuration;
-//import androidx.databinding.DataBindingUtil;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.annotation.Nullable;
-//import androidx.appcompat.app.ActionBar;
-//import androidx.appcompat.app.AppCompatActivity;
-//import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.example.beckart.R;
 import com.example.beckart.ViewModel.ProductViewModel;
@@ -32,6 +24,7 @@ import com.example.beckart.storage.LoginUtils;
 
 import static com.example.beckart.storage.LanguageUtils.loadLocale;
 import static com.example.beckart.utils.Constant.PRODUCT;
+
 
 public class AllLaptopsActivity extends AppCompatActivity implements ProductAdapter.ProductAdapterOnClickHandler, LifecycleOwner {
 

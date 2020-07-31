@@ -8,7 +8,7 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.arch.paging.PagedList;
 import android.content.Intent;
 import android.content.res.Configuration;
-//import androidx.databinding.DataBindingUtil;
+
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -16,9 +16,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.annotation.Nullable;
-//import androidx.appcompat.app.ActionBar;
-//import androidx.appcompat.app.AppCompatActivity;
-//import androidx.recyclerview.widget.GridLayoutManager;
+
 
 import com.example.beckart.R;
 import com.example.beckart.ViewModel.ProductViewModel;

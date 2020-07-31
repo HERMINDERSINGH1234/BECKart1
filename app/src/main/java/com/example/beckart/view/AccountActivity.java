@@ -1,16 +1,15 @@
 package com.example.beckart.view;
 
 import android.app.Dialog;
-//import androidx.lifecycle.ViewModelProviders;
+
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
-//import androidx.databinding.DataBindingUtil;
+
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-//import androidx.appcompat.app.ActionBar;
-//import androidx.appcompat.app.AppCompatActivity;
+
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -25,7 +24,7 @@ import android.widget.Toast;
 import com.example.beckart.R;
 import com.example.beckart.ViewModel.DeleteUserViewModel;
 import com.example.beckart.ViewModel.FromHistoryViewModel;
-//import com.example.beckart.databinding.ActivityAccountBinding;
+
 import com.example.beckart.databinding.ActivityAccountBinding;
 import com.example.beckart.storage.LoginUtils;
 

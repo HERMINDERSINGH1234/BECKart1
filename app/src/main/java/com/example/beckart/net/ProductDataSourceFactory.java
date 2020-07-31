@@ -8,7 +8,7 @@ import com.example.beckart.model.Product;
 
 public class ProductDataSourceFactory extends DataSource.Factory{
 
-    // Creating the mutable live database
+
     private MutableLiveData<PageKeyedDataSource<Integer, Product>> productLiveDataSource = new MutableLiveData<>();
 
     public static ProductDataSource productDataSource;

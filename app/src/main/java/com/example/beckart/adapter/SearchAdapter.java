@@ -27,12 +27,9 @@ import com.example.beckart.model.History;
 import com.example.beckart.model.Product;
 import com.example.beckart.storage.LoginUtils;
 import com.example.beckart.utils.RequestCallback;
-
 import java.text.DecimalFormat;
 import java.util.List;
-
 import static com.example.beckart.utils.Constant.LOCALHOST;
-
 public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchViewHolder>{
 
     private Context mContext;

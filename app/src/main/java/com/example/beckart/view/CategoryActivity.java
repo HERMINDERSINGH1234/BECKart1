@@ -13,10 +13,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+
 import com.example.beckart.R;
 import com.example.beckart.ViewModel.CategoryViewModel;
 import com.example.beckart.adapter.ProductAdapter;
@@ -49,17 +49,12 @@ public class CategoryActivity extends AppCompatActivity implements ProductAdapte
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle(getResources().getString(R.string.app_name));
-
-        // This line shows Up button
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         snack = Snackbar.make(findViewById(android.R.id.content), getResources().getString(R.string.no_internet_connection), Snackbar.LENGTH_INDEFINITE);
 
-        // Get Category from ProductActivity Intent
         Intent intent = getIntent();
         category = intent.getStringExtra(Constant.CATEGORY);
-
-        // Update Toolbar
         getSupportActionBar().setTitle(category);
 
         int userID = LoginUtils.getInstance(this).getUserInfo().getId();

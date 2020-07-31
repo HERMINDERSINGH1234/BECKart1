@@ -1,15 +1,11 @@
 package com.example.beckart.repository;
 
 import android.app.Application;
-//import androidx.lifecycle.LiveData;
-//import androidx.lifecycle.MutableLiveData;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.util.Log;
-
 import com.example.beckart.model.LoginApiResponse;
 import com.example.beckart.net.RetrofitClient;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

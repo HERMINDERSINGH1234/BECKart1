@@ -1,6 +1,4 @@
 package com.example.beckart.view;
-
-//import androidx.databinding.DataBindingUtil;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
