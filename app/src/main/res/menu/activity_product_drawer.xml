@@ -7,16 +7,16 @@
            android:id="@+id/group1">
         <item
             android:id="@+id/nav_mobiles"
-            android:icon="@drawable/ic_mobile"
+            android:icon="@drawable/ic_baseline_outdoor_grill_24"
             android:title="@string/mobiles" />
         <item
             android:id="@+id/nav_laptops"
-            android:icon="@drawable/ic_laptop"
+            android:icon="@drawable/ic_baseline_local_grocery_store_24"
             android:title="@string/laptops" />
 
         <item
             android:id="@+id/nav_babies"
-            android:icon="@drawable/ic_baby"
+            android:icon="@drawable/ic_baseline_kitchen_24"
             android:title="@string/babies" />
 
 
